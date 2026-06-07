@@ -1,6 +1,14 @@
-# Ignore in all directories
-**/.DS_Store
+# Ignore everything by default
+*
+
+# Keep CUBIDASH_RMA and all its contents
+!CUBIDASH_RMA/
+!CUBIDASH_RMA/**
+
+# Always ignore secrets and noise
 **/.env
-**/.env.example
+**/.env.local
 **/node_modules
 **/prompts_master.md
+**/.DS_Store
+Thumbs.db
